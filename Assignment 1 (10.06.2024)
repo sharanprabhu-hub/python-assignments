@@ -15,7 +15,7 @@ for i in l1:
 print(l2) 
 
 
-//2.PROGRAM TO ACCEPT LIST OF INRGERS AS INPUT, THEN PRINT ONLY PALINDROME NUMBERS AMONG THOSE
+//2.PROGRAM TO ACCEPT LIST OF INTEGERS AS INPUT, THEN PRINT ONLY PALINDROME NUMBERS AMONG THOSE
 l1 = []
 n = int(input("Enter number of elements : "))
 
@@ -23,13 +23,11 @@ for i in range(0, n):
 	ele = int(input())
 	l1.append(ele)
 print(l1)
-for i in l1:
-    rev=0
-    while(i>0):
-        dig= i%10
-        rev=rev*10+dig
-        i=i//10
-    if(rev==dig):
+ while(i>0):
+     dig= i%10
+     rev=rev*10+dig  
+     i=i//10
+      if(rev==dig):
         print(i)
 
 
